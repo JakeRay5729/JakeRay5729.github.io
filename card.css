@@ -1,0 +1,76 @@
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: rgba(44, 130, 201, 1);
+    float: left;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 7px 15px p right rgba(0, 0, 0, 0.6)
+}
+
+.content {
+    padding-top: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.image {
+    height: 50%;
+    width: 50%;
+    padding: 20px;
+}
+
+#jake.card {
+
+}
+
+#JessnasCardDiv {
+    margin:auto;
+    width: 400px;
+}
+
+#jessna.card {
+
+}
+
+#javon.card {
+
+}
+
+/* #damian.card {
+
+} */
+#damian.card {
+    background: linear-gradient(270deg, #009018, #030090, #900000);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    margin:10px;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes fade {
+  0%{opacity: 1;}
+  25%{opacity: .5}
+  50%{opacity: 0;}
+  75%{opacity: .5}
+  100%{opacity: 1;}
+}

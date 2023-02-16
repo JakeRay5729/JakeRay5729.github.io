@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+html {
+    overflow-y:scroll
+}
+
+html, body {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #eee;
+}
+
+ul {
+    list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+label {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.Title {
+    font-size: 40px;
+    color: rgb(42, 126, 175);
+}
+
+.thick-green-round-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: ridge;
+    border-radius: 50%;
+}
+
+.ListBoxes{
+    Background-color: green;
+    padding: 20px 20px 20px 20px !important;
+}
+
+li {
+    background-color: #85d1eb;
+    padding: 5px 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+/* a:link, a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+} */
+
+a:hover, a:active {
+  color: #667;
+}
+
+a:hover {
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    min-width: 10%;
+    max-width: 100%;
+    min-height: 5%;
+    max-height: 100%;
+    margin: 10px;
+}
+
+#HeresACustomIDBecauseDanWontAllowInlineStyles {
+    width: 100%;
+}
+
+#AnotherIDThatShouldBeAnInlineStyle {
+    width: 75%;
+}
+
+#CenterContainer {
+    width: auto;
+    margin: auto;
+}
+
+#JessnaSelfie {
+    background-image: url('image/jessna.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+#nestedTable {
+    display: inline-block;
+}
+
+#submitButton {
+    padding: 10px 18px;
+    border: none;
+    background: linear-gradient(270deg, #eeb62c, #2ceee7, #d32cee);
+    background-size: 200% 200%;
+    cursor: pointer;
+    color: white;
+}
+
+#JessnaAttributeDiv {
+    width: 900px;
+    margin: auto;
+}
+
+#JessnaAttributeDiv input {
+    padding: 4px;
+    width:150px;
+}
+
+#JessnasLink {
+    font-size: 10vh;
+    font-family: 'Bangers', cursive;
+    color: black;
+}
+
+.JessnaHeader {
+    font-family: 'Bangers', cursive;
+}
+
+.JessnasText {
+    font-size: 24px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.JessnaComicContainer {
+    border: 7px solid black;
+    margin: 5px;
+}
+/* Style css changes */
+
+/* Damian's css changes */
+.damianProfile {
+    width: 260px !important;
+    height: 300px !important;
+    border-radius: 8px;
+}
+#smallTextDamian{
+    text-align: justify;
+    font-size: 15px;
+    font-family:cursive;
+}
+#bodyTextDamian.body{
+    text-align:left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#coolThingsTextDamian{
+    font-size: 20px;
+    text-align:left;
+    font-family:inherit;
+    background-color: lightblue;
+    padding: 20px;
+}
+skinnyTextDamian {
+    font-style: italic;
+    font-weight: 500 !important;
+}
+#sweet.candy{
+    width: 100%;
+    height: 50px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      45deg,
+      rgb(255, 0, 0) 0px,
+      rgb(255, 0, 0) 5px,
+      black 5px,
+      black 10px,
+      rgb(0, 155, 0) 10px,
+      rgb(0, 155, 0) 15px
+    );
+}
+.damianContainer{
+    border: 7px solid black;
+    padding: 5px;
+}
+
+/* jake's css changes */
+.jaContainer {
+    padding: 5px;
+    border: 8px solid seagreen;
+}
+#jakeBio{
+    background: salmon;
+}
+.jakeText {
+    font-family: 'Papyrus', cursive;
+    font-size: 24px
+}
+#jakePicture {
+    background-image: url('image/jacobPic.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+#addMe.games {
+    font-size: 20px;
+    background-color: salmon;
+    font-family: Haettenschweiler;
+}
+/* javon's css changes */
+
+#javonProfilePic{
+  display: inline-block;
+  width: auto;
+  height: 90%;
+  margin: 5%;
+  overflow: hidden;
+  background-image: url(https://i.pinimg.com/originals/28/d4/36/28d436823890f7c6e5db2fa201b6a33c.gif);
+  background-size: 350px;
+  background-position: center;
+  background-repeat:no-repeat;
+  animation: fade 5s linear infinite;
+  background-color: rgba(84, 38, 158, 1);
+}
+
+#javonIMG{
+   height: 250px;
+   width:250px;
+   position: center;
+}
+
+#darkMode{
+  background-color: #000000 !important;
+  height: 1050px;
+}
+
+#darkLinks{
+  background-color: #00008B;
+}
+
+#darkText{
+  color: #6b05ef;
+}
+
+#javonSubHead{
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+}
+
+#javonPageText{
+  color: white;
+}
+
+#javonLink{
+  color: lightskyblue;
+  justify-content: center;
+  font-size: 20px;
+  word-wrap: wrap;
+}
+
+
+/*#javonCardCont.content{
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#javon.column{
+  color: lightskyblue !important;
+  font-size: 20px;
+  background: black;
+  padding: 10px;
+  height: 500px;
+  width: 250px;
+  z-index: -1;
+  flex-grow: 1;
+}
+
+#javonMid.column{
+  color: lightskyblue;
+  font-size: 20px;
+  background: black;
+  padding: 10px;
+  height: 500px;
+  width: 400px;
+  z-index: -1;
+  flex-grow: 3;
+}*/
+
+
+#javon.row{
+  background: black;
+  margin: auto;
+  width: auto;
+  padding: 2%;
+}
+
+#javon.col{
+  background: black;
+  width: auto;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  color: lightskyblue !important;
+}
+
+#javonColBorder{
+  background: linear-gradient(-45deg, #000000, #6b05ef);
+  background-size: 400% 400%;
+  padding: 1.5%;
+
+  -webkit-animation: colGradientBorder 3.5s ease infinite;
+  -moz-animation: colGradientBorder 3.5s ease infinite;
+  animation: colGradientBorder 3.5s ease infinite;
+}
+#javonRowBorder{
+  justify-content: center;
+  padding: 1.5% 2%;
+  background: linear-gradient(45deg, #00008B, #000000, #00008B);
+  background-size: 400% 400%;
+
+      -webkit-animation: rowGradientBorder 3.5s ease alternate infinite;
+      -moz-animation: rowGradientBorder 3.5s ease alternate infinite;
+      animation: rowGradientBorder 3.5s ease alternate infinite;
+}
+
+javonText.Text{
+  justify-content: center;
+  font-size: 20px;
+  word-wrap: wrap;
+}
+
+@-webkit-keyframes colGradientBorder {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-moz-keyframes colGradientBorder {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@keyframes colGradientBorder {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+
+@-webkit-keyframes rowGradientBorder {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-moz-keyframes rowGradientBorder {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@keyframes rowGradientBorder {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+/* jessna's css changes */
+
+/*This is Jessna's animation*/
+#heart {
+  fill: #ff75c0;
+  position: relative;
+  top: 45%;
+  width: 50px;
+  animation: heartbeat 1.5s ease infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.3); fill: #00bfff;}
+  50% { transform: scale(1); fill: #ff4eae;}
+  60% { transform: scale(1.3); fill: #00bfff;}
+  100% { transform: scale(1); }
+}
+
+.dropShadow {
+    -webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,.8));
+}
+
+/*This one doesn't count vvv*/
+#Jessnas.card {
+    background: linear-gradient(270deg, #eeb62c, #2ceee7, #d32cee);
+    background-size: 600% 600%;
+
+    -webkit-animation: JessnasCard 9s ease infinite;
+    -moz-animation: JessnasCard 9s ease infinite;
+    animation: JessnasCard 9s ease infinite;
+    color: white;
+}
+
+#Jessnas.card:hover {
+    color:black;
+}
+
+@-webkit-keyframes JessnasCard {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes JessnasCard {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes JessnasCard {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/*Chris' animation*/
+
+#chris.card {
+    animation: slide-right 1s ease-out both;
+    background-color: rgb(128, 0, 0);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(3000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+/*Chris' Classes and ID's*/
+
+.ChrisContentContainer {
+    border: 5px solid rgb(128, 0, 0);
+    padding: 7px;
+    margin: 7px;
+}
+
+.ChrisContainer {
+    border: 5px solid rgb(128, 0, 0);
+    margin: 7px;
+}
+
+.image.chrisfix {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 50px;
+}
+
+#CardContainer {
+    width: max-content;
+}
+
+#FlexRow.row {
+    display: flex;
+}
+
+#CenteredColumn.column {
+    margin: auto;
+}
+
+.ContentBuffer {
+    background-color: rgb(128, 0, 0);
+    box-sizing: border-box; /* This has to be the most useful thing ever for what I want to do. */
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+.ChrisChamp {
+    background-color: rgb(128, 0, 0);
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.ChampImage {
+    height: 50%;
+    width: height;
+    margin-bottom: 10px
+}
+
+.ChrisText {
+    font-size: 24px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+#current{
+    color: #666666;
+}
+#currentJavon{
+    color: #FFFFFF;
+}
+/*=======Jake Animation=======*/
+.box{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    background: none;
+  }
+  .head{
+    position: absolute;
+    top:16.5%;
+    left: 25%;
+    width: 52%;
+    height: 70%;
+    background: #A6BECF;
+    border-radius: 50%;
+  }
+  .head-copy{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: gray;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .ear-left{
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    left: 6%;
+    top: 0%;
+    background: gray;
+    border-radius: 50%;
+    transform: rotate(160deg);
+    z-index: 1;
+  }
+  .ear-right{
+     position: absolute;
+    width: 20%;
+    height: 50%;
+    right: 6%;
+    top: 0%;
+    background: gray;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+  .inner-ear{
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background: #E090A1;
+  }
+  .eye-left{
+    position: absolute;
+    background: yellow;
+    width: 20%;
+    height: 20%;
+    top: 37%;
+    left: 21%;
+    border-radius: 50%;
+    z-index: 3;
+    -webkit-transform-origin: 50%;
+    -webkit-animation: blink 5s infinite;
+  }
+  .eye-right{
+    position: absolute;
+    background: yellow;
+    width: 20%;
+    height: 20%;
+    top: 37%;
+    right: 21%;
+    border-radius: 50%;
+    z-index: 3;
+    -webkit-transform-origin: 50%;
+    -webkit-animation: blink 5s infinite;
+  }
+  .pupil{
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 15%;
+    left: 30%;
+    border-radius: 50%;
+    background: #000000;
+  }
+  .nose{
+    position: absolute;
+    background: #E090A1;
+    width: 15%;
+    height: 9.5%;
+    left: 43%;
+    top: 65%;
+    border-radius: 50px;
+    z-index: 5;
+  }
+  .right-mouth {
+     position: absolute;
+    width: 5%;
+    height: 9.5%;
+    left: 47%;
+    top: 72%;
+    z-index: 4;
+    border-radius: 50%;
+    border: solid 5px;
+    border-color: transparent pink pink transparent;
+  }
+  .left-mouth {
+     position: absolute;
+    width: 5%;
+    height: 9.5%;
+    left: 50%;
+    top: 72%;
+    z-index: 4;
+    border-radius: 50%;
+    border: solid 5px;
+    border-color: transparent pink pink transparent;
+    transform: scaleX(-1);
+  }
+  @-webkit-keyframes blink {
+      0%, 100% {
+          transform: scale(1, .01);
+      }
+      5%,
+      90% {
+          transform: scale(1, 1);
+      }
+  }
