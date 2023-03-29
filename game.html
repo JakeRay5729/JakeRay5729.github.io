@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <header><img width="348" height="146" src="image/dragon.png" alt="#"></header>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eee; display: inline-block">
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="landing.html">Landing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="team/chris.html">Chris</a>
+                        <a class="dropdown-item" href="team/jessna.html">Jessna</a>
+                        <a class="dropdown-item" href="team/jake.html">Jake</a>
+                        <a class="dropdown-item" href="team/javon.html">Javon</a>
+                        <a class="dropdown-item" href="team/damian.html">Damian</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="tags.html">Tags</a>
+                            <a class="dropdown-item" href="nested.html">Nested</a>
+                            <a class="dropdown-item" href="attributes.html">Attributes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Javascript Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="random.html">Random</a>
+                          <a class="dropdown-item active" href="game.html">Game</a>
+                      </div>
+                  </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+
+        <audio id="killSound">
+          <source src="audio/Kill.mp3" type="audio/mp3"> <!--From Among Us-->
+        </audio>
+        <audio id="deathSound">
+          <source src="audio/Meeting.mp3" type="audio/mp3">
+        </audio>
+        <Audio loop id="backgroundMusic">
+          <source src="audio/AmongDrip.mp3" type="audio/mp3"> <!--From Leonz on Youtube-->
+        </Audio>
+
+        <img src="AmogusArt/FlappySus.png" width="500" height="190">
+        <br>
+        <canvas id="gameCanvas" style="border: 1px solid #000000; background:url('AmogusArt/Hallway.png')" width="960" height="540"></canvas>
+        <br>
+        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Accelerate</button>
+        <br>
+        <button id="start" onmousedown="startGame()">Start Game</button>
+        <p>Use the Accelerate button to move upwards</p>
+        <p>How long can you stay alive?</p>
+
+        <script src="game.js"></script>
+    </body>
+</html>

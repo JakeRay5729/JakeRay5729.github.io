@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <header><img width="348" height="146" src="image/dragon.png" alt="#"></header>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eee; display: inline-block">
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="landing.html">Landing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="team/chris.html">Chris</a>
+                        <a class="dropdown-item" href="team/jessna.html">Jessna</a>
+                        <a class="dropdown-item" href="team/jake.html">Jake</a>
+                        <a class="dropdown-item" href="team/javon.html">Javon</a>
+                        <a class="dropdown-item" href="team/damian.html">Damian</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="tags.html">Tags</a>
+                            <a class="dropdown-item" href="nested.html">Nested</a>
+                            <a class="dropdown-item active" href="#">Attributes</a>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Javascript Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="random.html">Random</a>
+                                <a class="dropdown-item" href="game.html">Game</a>
+                            </div>
+                        </li>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Jessna -->
+        <div id="JessnaAttributeDiv">
+            <label for="Name">Please Type Something:</label>
+            <input type="text" id="Name" name="Name" placeholder="Type something" title="Input for Text"><br><br>
+            <button id="submitButton" onclick="submit(document.getElementById('Name').value)">Submit</button>
+            <canvas id="canvas" width="750px" height="500px">
+            </canvas>
+            <article width="100px">
+                <a href="#"><p>This is a paragraph</p></a>
+            </article>
+            <script>
+                function submit (text) {
+                    if(text != "") {
+                        var canvas = document.getElementById("canvas");
+                        var ctx = canvas.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText(text ,10,50);
+                    } else {
+                        var canvas = document.getElementById("canvas");
+                        var ctx = canvas.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText("Aww man, you should have typed something" ,10,50);
+                    }
+                }
+            </script><br/>
+        </div>
+
+        <!-- Javon -->
+        <div>
+            <span>
+                <a href="https://drive.google.com/file/d/1dJCjlNaa0nK6lC_qK6ZqMgxYvBBD-51o/view?usp=sharing">
+                    <label for="kuleshov">
+                        <video title="Javon playing Among Us" alt="Among Us video" id="kuleshov" width="600px" height="400px" style="border-color: #00079a; border-width: 10px; border-style: groove; border-radius: 15px"controls autoplay muted loop>
+                            <source src="video/Kuleshov_AmongUs.mp4" type="video/mp4"></source>
+                        </video>
+                    </label>
+                </a>
+            </span>
+        </div>
+
+        <!-- Damian -->
+        <div>
+            <img src="image/dragon.png" alt="A pixelized dragon and the words 5th Cohort Elites" style = width:800px; id="none" type="picture" understanging = "maybe">
+            <h1 lang="Eng" artist="Damian Buhler">
+                Image by: Damian Buhler
+            </h1>
+            <H2 lang="Eng" Discription="Filler Text">
+                A picture that i made to show the team name better.
+            </H2>
+        </div>
+
+        <!-- Chris-->
+        <div style="background-color:bisque">
+            <form title="I'm a select input" width="400" height="300">
+                <label for="games" style="color:red">Choose a game series:</label>
+                <select name="games" id="games">
+                    <optgroup label="Bethesda Games">
+                        <option value="Elder Scrolls">Elder Scrolls</option>
+                        <option value="Fallout">Fallout</option>
+                    </optgroup>
+                    <optgroup label="Id Games">
+                        <option value="DOOM">DOOM</option>
+                        <option value="Wolfenstein">Wolfenstein</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+
+        <!-- Jacob -->
+        <div title="Jake's attempt at competition for Jessna">
+            <form>
+                <Label for="favNum" style="color: red">What is Your favorite integer 0 through 9?</Label>
+                <br></br>
+                <input type="text" id="num" placeholder="Type a Number">
+                <button onclick="yourNum(document.getElementbyID('num').value)">Run Test</button>
+                <canvas id="numTest"></canvas>
+                <script>
+                    function yourNum(txt){
+                        var numTest = document.getElementById("numTest");
+                        var contxt = numTest.getContext("2d");
+                        contxt.fillText("", 10, 50);
+                        contxt.font("30px Arial")
+                        if(!txt.isInteger() || txt < 0 || text > 9) contxt.fillText("Please enter a single digit integer");
+                        else{
+                            contxt.fillText("Your favorite integer is " + txt, 10, 50);
+                        }
+                    }
+                </script>
+            </form>
+            <a href="#">
+                <p lang="Eng" strong>
+                    Thanks for listening (^.^)
+                </p>
+            </a>
+        </div>
+    </body>
+</html>

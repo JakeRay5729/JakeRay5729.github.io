@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <header><img width="348" height="146" src="image/dragon.png" alt="#"></header>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eee; display: inline-block">
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="landing.html">Landing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="team/chris.html">Chris</a>
+                        <a class="dropdown-item" href="team/jessna.html">Jessna</a>
+                        <a class="dropdown-item" href="team/jake.html">Jake</a>
+                        <a class="dropdown-item" href="team/javon.html">Javon</a>
+                        <a class="dropdown-item" href="team/damian.html">Damian</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item active" href="#">Tags</a>
+                            <a class="dropdown-item" href="nested.html">Nested</a>
+                            <a class="dropdown-item" href="attributes.html">Attributes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Javascript Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="random.html">Random</a>
+                          <a class="dropdown-item" href="game.html">Game</a>
+                      </div>
+                  </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Jessna -->
+        <div id="Jessna">
+                <label>Please Type Something:</label>
+                <input type="text" id="Name" placeholder="Type something"><br><br>
+                <button id="submitButton" onclick="submit(document.getElementById('Name').value)">Submit</button>
+            <canvas id="canvas">
+            </canvas>
+            <article>
+                <a href="#"><p>This is a paragraph</p></a>
+            </article>
+            <script>
+                function submit (text) {
+                    if(text != "") {
+                        var canvas = document.getElementById("canvas");
+                        var ctx = canvas.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText(text ,10,50);
+                    } else {
+                        var canvas = document.getElementById("canvas");
+                        var ctx = canvas.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText("Aww man, you should have typed something" ,10,50);
+                    }
+                }
+
+            </script><br/>
+        </div>
+
+        <!-- Chris -->
+        <h3>An Audio Sample:</h3>
+        <div>
+            <audio controls>
+                <source src="audio/LightFire.mp3" type="audio/mp3">
+            </audio>
+            <p>This sound is one<br>
+            that I used in my game<br>
+            I made for GIMM 350.</p>
+        </div>
+
+        <div>
+            <picture>
+                <source media="(min-width:500px)" srcset="image/az_big.png">
+                <img src="image/az_small.png" style="width:auto;">
+            </picture>
+        </div>
+        <h4>Two images exist here.</h4>
+        <uo>
+            <li>
+                <p>PTSD Angel</p>
+            </li>
+            <li>
+                <p>Happy Angel</p>
+            </li>
+        </uo>
+
+
+        <!-- Damian -->
+        <div>
+
+            <h2 style="color: blue;">
+                The Profile Picture
+            </h2>
+            <ul>
+                <li>
+                    Taken around noon <br>
+                </li>
+
+                <q>
+                    While doing a mini Golf Course
+                </q>
+                <br>
+            </ul>
+            <picture>
+                <img class = "thick-green-round-border" src="image/Profile1.jpg" alt="#" width = 300; height="400";>
+            </picture>
+        </div>
+
+        <!-- Javon -->
+        <div>
+          <p>Do You Know <em>da Wae?</em></p>
+          <ul>
+            <li style="background-color: white">
+              <label style="color: black" for="know"><input style="vertical-align: middle; margin: 0px" id="know" type="radio" name="Da Wae"> I know Da Wae</label><br>
+              <label style="color: black" for="dont know"><input style="vertical-align: middle; margin: 0px" id="dont know" type="radio" name="Da Wae"> I don't know Da Wae</label>
+            </li>
+          </ul>
+        </div>
+        <h2>
+          <nav>
+            <a href="https://www.youtube.com/watch?v=2TkTFgy0g2s">
+              <picture>
+                <img id="daWae" height="400px" width="400px" src="image/UgandanKnuckles.png"></img>
+                <footer style="font-size:12px; color: black">Ugandan Kuckles</footer>
+              </picture>
+            </a>
+          </nav>
+        </h2>
+        <h3>
+          <div>
+            <label>
+              <p>
+                Did you find <em>da Wae</em>?<br>
+                Or did <em>da Wae</em> find you?
+              </p>
+            </label>
+          </div>
+        </h3>
+         <!-- Jacob -->
+         <div>
+            <form>
+                <Label for="favNum">What is Your favorite integer 0 through 9?</Label>
+                <br></br>
+                <input type="text" id="num" placeholder="Type a Number">
+                <button onclick="yourNum(document.getElementbyID('num').value)">Run Test</button>
+                <canvas id="numTest"></canvas>
+                <script>
+                    function yourNum(txt){
+                        var numTest = document.getElementById("numTest");
+                        var contxt = numTest.getContext("2d");
+                        contxt.fillText("", 10, 50);
+                        contxt.font("30px Arial")
+                        if(!txt.isInteger() || txt < 0 || text > 9) contxt.fillText("Please enter a single digit integer");
+                        else{
+                            contxt.fillText("Your favorite integer is " + txt, 10, 50);
+                        }
+                    }
+                </script>
+            </form>
+            <a href="#">
+                <p strong>
+                    Thanks for listening (^.^)
+                </p>
+            </a>
+        </div>
+    </body>
+</html>

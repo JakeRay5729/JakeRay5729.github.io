@@ -1,109 +1,73 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JS -->
-    <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    </head>
 
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../card.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <h1>Jake's Page</h1>
-    <!--<div id="Jake" class="card" style="background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(251,246,63,1) 10%, rgba(100,226,90,1) 20%, rgba(89,218,219,1) 30%, rgba(85,110,199,1) 40%, rgba(154,82,182,1) 50%, rgba(115,80,171,1) 60%, rgba(179,78,186,1) 70%, rgba(212,75,137,1) 80%, rgba(233,72,181,1) 90%, rgba(252,70,70,1) 100%)">
-                <div class="image">
-                    <img height="200px" width="260px" src="https://media.discordapp.net/attachments/644724274908626955/783832853947220018/PXL_20201202_230835677.jpg?width=443&height=591">
+    <body>
+        <div>
+            <header><img width="348" height="146" src="image/dragon.png" alt="#"></header>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eee; display: inline-block">
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="landing.html">Landing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="team/chris.html">Chris</a>
+                        <a class="dropdown-item" href="team/jessna.html">Jessna</a>
+                        <a class="dropdown-item" href="team/jake.html">Jake</a>
+                        <a class="dropdown-item" href="team/javon.html">Javon</a>
+                        <a class="dropdown-item" href="team/damian.html">Damian</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="tags.html">Tags</a>
+                            <a class="dropdown-item" href="nested.html">Nested</a>
+                            <a class="dropdown-item" href="attributes.html">Attributes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarPropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Javascript Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="random.html">Random</a>
+                          <a class="dropdown-item" href="game.html">Game</a>
+                      </div>
+                  </li>
+                  </ul>
                 </div>
-                <div class="content">
-                    On the Right
-                    <br></br>
-                    Attack: 11       Health: 3
-                </div>
-            </div>-->
-    <div class="jaContainer">
-        <div class="row">
-            <div class="col jaContainer" id="jakePicture"></div>
-            <div class="col jaContainer" id="jakeBio">
-                <p class="jakeText">Yoo! My name is Jacob Ray and for this CSS assignment I was assigned the lead
-                    developer role.
-                    I got into coding in my junior year of highschool where I took AP Computer Science A and discovered
-                    the joy of
-                    watching something you've put hours into finally work after failing multiple attempts. I currently
-                    work as a
-                    Hero Trainer for Black Box VR, a gym that uses virtual reality to make working out feel like a game.
-                    In my
-                    free time I like to play videogames ranging from Hades, to League of Legends, and even to Tomb
-                    Raider!
-                </p>
-            </div>
+            </nav>
         </div>
-        <div class="row">
-            <div class="col jaContainer">
-                <div class="box">
-                    <!-- Circular Head-->
-                    <div class="head">
-                        <!-- Circular Head Copy -->
-                        <div class="head-copy"></div>
-                        <!-- Left Ear Black-->
-                        <div class="ear-left">
-                            <!-- Inner ear Pink -->
-                            <div class="inner-ear"></div>
-                        </div>
-                        <!-- Right Ear Black-->
-                        <div class="ear-right">
-                            <!-- Inner Ear Pink-->
-                            <div class="inner-ear"></div>
-                        </div>
-                        <!-- Left Outer Eye ~ Yellow -->
-                        <div class="eye-left">
-                            <!-- Pupil Black -->
-                            <div class="pupil">
-                            </div>
-                        </div>
-                        <!-- Right Outer Eye ~ Yellow -->
-                        <div class="eye-right">
-                            <!-- Pupil Black -->
-                            <div class="pupil">
-                            </div>
-                        </div>
-                        <!-- Nose Pink -->
-                        <div class="nose">
-                        </div>
-                        <!--cat mouth-->
-                        <div class="right-mouth"></div>
-                        <div class="left-mouth"></div>
-                        <!-- End Head -->
-                    </div>
-                    <!-- End Invisible Box -->
-                </div>
-            </div>
-            <div class="col jaContainer">
-                <div class="addMe" id="games">
-                    Add me on these pages!
-                    <ul>
-                        <li>
-                            Steam: JRayman
-                        </li>
-                        <li>
-                            Discord: JRay#7578
-                        </li>
-                        <li>
-                            League of Legends: CoreJRay
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
+        
+        <h1>Hello World</h1>
+        <p>This is Jessna, the code wizard :D</p>
+        <p>I'm hosted with GitHub Pages.</p>
+        <p>This was added from chris branch</p>
+        <p>Hell Yeah!! - Jake</p>
+    </body>
 </html>
